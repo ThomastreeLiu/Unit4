@@ -23,10 +23,11 @@ public class order extends JPanel implements ActionListener {
         add(enter);
         add(welcome);
         add(txt1);
-        add(txt2);
         add(word1);
-        add(txt3);
+        add(txt2);
         add(word2);
+        add(txt3);
+
         //add(txt4);
         add(word3);
         add(enter);
