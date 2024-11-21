@@ -1,9 +1,23 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class RandomSentence {
     public RandomSentence() {
+        JLabel title = new JLabel("Random Sentence");
+        JLabel txt = new JLabel("Press the buttons to randomize a sentence");
+        JButton button1 = new JButton("The");
+        if (button1.getActionCommand ().equals ("1")){
+            int rand = (int)(Math.random() * 3);
+            if (rand == 0)
+                button1.setText ("The");
+            else if (rand == 1)
+                button1.setText ("A");
+            else
+                button1.setText ("This");
+        }
+
 
 //constructor with initializing code in here
     }
