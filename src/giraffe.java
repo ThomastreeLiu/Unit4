@@ -1,3 +1,8 @@
+//Author:Thomas
+//Name:giraffe
+//Date:nov20
+//Purpose:print 4 picture and 2 lable in the screen
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
