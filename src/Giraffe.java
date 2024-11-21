@@ -1,39 +1,37 @@
 //Author:Thomas
-//Name:girl
+//Name:giraffe
 //Date:nov20
-//Purpose:print 4 picture and 2 lable in the screen
+//Purpose:print 4 picture and 2 label in the screen
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class zebra extends JPanel implements ActionListener {
+public class Giraffe extends JPanel implements ActionListener {
 
 
-    public zebra() {
+    public Giraffe() {
         setBackground(Color.yellow);
-        JLabel title = new JLabel("Many zebras");
+        JLabel title = new JLabel("Tall giraffes");
         title.setFont(new Font("Zilla Slab", Font.ITALIC, 40));
-        JLabel applicate = new JLabel("Click zebra that is different");
-        applicate.setFont(new Font("Arial", Font.BOLD, 30));
-        JButton pic1 = new JButton(createImageIcon("zebra1.jpg"));
-        JButton pic2 = new JButton(createImageIcon("zebra2.jpg"));
-        JButton pic3 = new JButton(createImageIcon("zebra3.jpg"));
-        JButton pic4 = new JButton(createImageIcon("zebra4.jpg"));
+        JLabel txt = new JLabel("Look carefully, click on the tallest giraffe");
+        txt.setFont(new Font("Arial", Font.BOLD, 30));
+        JButton pic1 = new JButton(createImageIcon("giraffe1.jpg"));
+        JButton pic2 = new JButton(createImageIcon("giraffe2.jpg"));
+        JButton pic3 = new JButton(createImageIcon("giraffe3.jpg"));
 //constructor with initializing code in here
         add(title);
-        add(applicate);
+        add(txt);
         add(pic1);
         add(pic2);
         add(pic3);
-        add(pic4);
     }
     public void actionPerformed(ActionEvent e) {
 
     }
     protected static ImageIcon createImageIcon(String path) {
-        java.net.URL imgURL = zebra.class.getResource(path);
+        java.net.URL imgURL = Giraffe.class.getResource(path);
 
         if (imgURL != null) {
 
@@ -51,10 +49,10 @@ public class zebra extends JPanel implements ActionListener {
     public static void main(String[] args) {
         JFrame.setDefaultLookAndFeelDecorated(true);
         JFrame frame = new JFrame("giraff");
-        frame.setSize(450, 460);         //resizes JFrame pane size
+        frame.setSize(650, 450);         //resizes JFrame pane size
         frame.setBackground(Color.WHITE);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        zebra panel = new zebra();
+        Giraffe panel = new Giraffe();
         panel.setOpaque(true);
         frame.add(panel);
         frame.setLocationRelativeTo(null);
