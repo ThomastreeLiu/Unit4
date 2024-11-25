@@ -26,44 +26,44 @@ public class RandomSentence extends JPanel implements ActionListener{
         button1.addActionListener(this);
         button1.setActionCommand("button1");
 
-        button2.setBackground(Color.WHITE);
-        button2.setForeground(Color.BLACK);
+        button2.setBackground(Color.BLUE);
+        button2.setForeground(Color.YELLOW);
         button2.setOpaque(true);
         button2.addActionListener(this);
         button2.setActionCommand("button2");
 
-        button3.setBackground(Color.WHITE);
-        button3.setForeground(Color.BLACK);
+        button3.setBackground(Color.GREEN);
+        button3.setForeground(Color.RED);
         button3.setOpaque(true);
         button3.addActionListener(this);
         button3.setActionCommand("button3");
 
-        button4.setBackground(Color.WHITE);
-        button4.setForeground(Color.BLACK);
+        button4.setBackground(Color.BLUE);
+        button4.setForeground(Color.WHITE);
         button4.setOpaque(true);
         button4.addActionListener(this);
         button4.setActionCommand("button4");
 
-        button5.setBackground(Color.WHITE);
-        button5.setForeground(Color.BLACK);
+        button5.setBackground(Color.PINK);
+        button5.setForeground(Color.YELLOW);
         button5.setOpaque(true);
         button5.addActionListener(this);
         button5.setActionCommand("button5");
 
-        button6.setBackground(Color.WHITE);
-        button6.setForeground(Color.BLACK);
+        button6.setBackground(Color.GRAY);
+        button6.setForeground(Color.CYAN);
         button6.setOpaque(true);
         button6.addActionListener(this);
         button6.setActionCommand("button6");
 
-        button7.setBackground(Color.WHITE);
-        button7.setForeground(Color.BLACK);
+        button7.setBackground(Color.ORANGE);
+        button7.setForeground(Color.BLUE);
         button7.setOpaque(true);
         button7.addActionListener(this);
         button7.setActionCommand("button7");
 
-        button8.setBackground(Color.WHITE);
-        button8.setForeground(Color.BLACK);
+        button8.setBackground(Color.RED);
+        button8.setForeground(Color.BLUE);
         button8.setOpaque(true);
         button8.addActionListener(this);
         button8.setActionCommand("button8");
@@ -197,7 +197,7 @@ public class RandomSentence extends JPanel implements ActionListener{
     public static void main(String[] args) {
         JFrame.setDefaultLookAndFeelDecorated(true);
         JFrame frame = new JFrame("RandomSentence");
-        frame.setSize(260, 380);         //resizes JFrame pane size
+        frame.setSize(260, 430);         //resizes JFrame pane size
         frame.setBackground(Color.WHITE);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         RandomSentence panel = new RandomSentence();
