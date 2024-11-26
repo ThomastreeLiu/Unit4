@@ -1,8 +1,12 @@
+//Author:Thomas
+//Name:DiceRoll
+//Date:nov26
+//Purpose:Click to create a random side of dice
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.border.*;
-
 
 public class DiceRoll extends JPanel implements ActionListener{
     JButton Dice = new JButton("CLICK");
