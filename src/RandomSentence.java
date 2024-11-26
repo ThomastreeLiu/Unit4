@@ -192,7 +192,6 @@ public class RandomSentence extends JPanel implements ActionListener{
             return null;
 
         }
-
     }
     public static void main(String[] args) {
         JFrame.setDefaultLookAndFeelDecorated(true);
