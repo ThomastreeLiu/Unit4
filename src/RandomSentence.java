@@ -158,7 +158,7 @@ public class RandomSentence extends JPanel implements ActionListener{
             else if (rand == 1)
                 button7.setText ("Wonderful");
             else if (rand == 2)
-                button4.setText ("Dreadful");
+                button7.setText ("Dreadful");
             else
                 button7.setText ("Dingy");
         }
@@ -169,11 +169,11 @@ public class RandomSentence extends JPanel implements ActionListener{
             else if (rand == 1)
                 button8.setText ("Rock");
             else if (rand == 2)
-                button4.setText ("Skyscraper");
+                button8.setText ("Skyscraper");
             else if (rand == 3)
-                button4.setText ("Fence");
+                button8.setText ("Fence");
             else if (rand == 4)
-                button4.setText ("Baseball");
+                button8.setText ("Baseball");
             else
                 button8.setText ("Diamond");
         }
