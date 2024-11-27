@@ -9,16 +9,18 @@ import javax.swing.*;
 import javax.swing.border.*;
 
 public class DiceRoll extends JPanel implements ActionListener{
-    JButton Dice = new JButton("CLICK");
+    JButton Dice = new JButton(createImageIcon("dice.gif"));
+    JButton Roll = new JButton("Roll  ");
     public DiceRoll() {
         JLabel title = new JLabel("Click to roll the dice");
-        Dice.setBackground(Color.WHITE);
-        Dice.setForeground(Color.BLACK);
-        Dice.setOpaque(true);
-        Dice.addActionListener(this);
-        Dice.setActionCommand("Click");
+        Roll.setBackground(Color.WHITE);
+        Roll.setForeground(Color.BLACK);
+        Roll.setOpaque(true);
+        Roll.addActionListener(this);
+        Roll.setActionCommand("Click");
         add(title);
         add(Dice);
+        add(Roll);
 //constructor with initializing code in here
     }
     public void actionPerformed(ActionEvent e) {
@@ -51,7 +53,7 @@ public class DiceRoll extends JPanel implements ActionListener{
     public static void main(String[] args) {
         JFrame.setDefaultLookAndFeelDecorated(true);
         JFrame frame = new JFrame("DiceRoll");
-        frame.setSize(190, 190);         //resizes JFrame pane size
+        frame.setSize(190, 230);         //resizes JFrame pane size
         frame.setBackground(Color.WHITE);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         DiceRoll panel = new DiceRoll();
