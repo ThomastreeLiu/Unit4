@@ -55,7 +55,7 @@ public class ChickenChicken extends JPanel implements ActionListener{
             else if (rand == 2) {
                 card.setIcon(createImageIcon("Chicken3.png"));
                 intro.setText("A fox frightens away one hen, if there is a hen. ");
-                if (hen>0)
+                if (hen>0&&dog==0)
                     hen--;
             }
             else if (rand == 3) {
@@ -80,15 +80,19 @@ public class ChickenChicken extends JPanel implements ActionListener{
             else if (rand == 7) {
                 card.setIcon(createImageIcon("Chicken8.png"));
                 intro.setText("Farmer collects all of the eggs. " +
-                        "The hens go away because they have nothing to sit on. ");
+                        "The hens go away because they have nothing to sit on.");
+                hen=0;
+                egg=0;
             }
             else if (rand == 8) {
                 card.setIcon(createImageIcon("Chicken9.png"));
                 intro.setText("The dog chase the next fox to come.");
+                dog++;
             }
             else {
                 card.setIcon(createImageIcon("Chicken10.png"));
                 intro.setText("The disguised fox works just like a fox except");
+                hen--;
             }
         }
     }
