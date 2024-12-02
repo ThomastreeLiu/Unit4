@@ -44,30 +44,38 @@ public class ChickenChicken extends JPanel implements ActionListener{
             if (rand == 0) {
                 card.setIcon(createImageIcon("Chicken1.png"));
                 intro.setText("Hens sit on one egg, if there is an egg.");
+                if (hen<egg)
+                    hen++;
             }
             else if (rand == 1) {
                 card.setIcon(createImageIcon("Chicken2.png"));
                 intro.setText("You are counting eggs. Count one for this card.");
+                egg++;
             }
             else if (rand == 2) {
                 card.setIcon(createImageIcon("Chicken3.png"));
                 intro.setText("A fox frightens away one hen, if there is a hen. ");
+                if (hen>0)
+                    hen--;
             }
             else if (rand == 3) {
                 card.setIcon(createImageIcon("Chicken4.png"));
-                intro.setText("Rooster does nothing to the egg or hen count. However, it says: ");
+                intro.setText("Rooster does nothing \nto the egg or hen count. \nHowever, it says: \nWake up");
             }
             else if (rand == 4) {
                 card.setIcon(createImageIcon("Chicken5.png"));
                 intro.setText("Adds 2 to the egg count. ");
+                egg=egg+2;
             }
             else if (rand == 5) {
                 card.setIcon(createImageIcon("Chicken6.png"));
-                intro.setText("If there is a hen, it is distracted. ");
+                intro.setText("If there is a hen, it is distracted.");
+                if (hen>0)
+                    hen--;
             }
             else if (rand == 6) {
                 card.setIcon(createImageIcon("Chicken7.png"));
-                intro.setText("Duck does nothing to the egg or hen count. However, it says: ");
+                intro.setText("Duck does nothing \nto the egg or hen count. \nHowever, it says:\nQuack");
             }
             else if (rand == 7) {
                 card.setIcon(createImageIcon("Chicken8.png"));
