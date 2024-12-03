@@ -17,7 +17,7 @@ public class ChickenChicken extends JPanel implements ActionListener{
     int hen = 0;
     int dog = 0;
     public ChickenChicken() {
-        JLabel title = new JLabel("How many egg are in play?");
+        JLabel title = new JLabel("       How many egg are in play?");
         nxtcard.setBackground(Color.RED);
         nxtcard.setForeground(Color.WHITE);
         nxtcard.setOpaque(true);
@@ -60,7 +60,7 @@ public class ChickenChicken extends JPanel implements ActionListener{
             }
             else if (rand == 3) {
                 card.setIcon(createImageIcon("Chicken4.png"));
-                intro.setText("Rooster does nothing \nto the egg or hen count. \nHowever, it says: \nWake up");
+                intro.setText("Wake up");
             }
             else if (rand == 4) {
                 card.setIcon(createImageIcon("Chicken5.png"));
@@ -75,12 +75,11 @@ public class ChickenChicken extends JPanel implements ActionListener{
             }
             else if (rand == 6) {
                 card.setIcon(createImageIcon("Chicken7.png"));
-                intro.setText("Duck does nothing \nto the egg or hen count. \nHowever, it says:\nQuack");
+                intro.setText("Quack");
             }
             else if (rand == 7) {
                 card.setIcon(createImageIcon("Chicken8.png"));
-                intro.setText("Farmer collects all of the eggs. " +
-                        "The hens go away because they have nothing to sit on.");
+                intro.setText("Eggs and hens is zero now");
                 hen=0;
                 egg=0;
             }
@@ -92,7 +91,8 @@ public class ChickenChicken extends JPanel implements ActionListener{
             else {
                 card.setIcon(createImageIcon("Chicken10.png"));
                 intro.setText("The disguised fox works just like a fox except");
-                hen--;
+                if (hen>0)
+                    hen--;
             }
         }
     }
@@ -109,7 +109,7 @@ public class ChickenChicken extends JPanel implements ActionListener{
     public static void main(String[] args) {
         JFrame.setDefaultLookAndFeelDecorated(true);
         JFrame frame = new JFrame("ChickenChicken");
-        frame.setSize(250, 440);         //resizes JFrame pane size
+        frame.setSize(280, 460);         //resizes JFrame pane size
         frame.setBackground(Color.WHITE);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         ChickenChicken panel = new ChickenChicken();
