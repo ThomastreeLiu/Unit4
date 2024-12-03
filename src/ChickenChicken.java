@@ -1,5 +1,5 @@
 //Author:Thomas
-//Name:cardnxtcard
+//Name:ChickenChicken
 //Date:nov26
 //Purpose:Click to create a random side of dice
 
