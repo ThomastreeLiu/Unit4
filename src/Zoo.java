@@ -196,11 +196,13 @@ public class Zoo  extends JPanel implements ActionListener {
         card7.setBackground(Color.white);
         JLabel title = new JLabel("Living Dinosaur - Hoatzin");
         title.setFont(new Font("Arial", Font.PLAIN, 24));
+        JLabel pic = new JLabel(createImageIcon("hoatzin.jpg"));
         JButton returnBack = new JButton("Return to Aviary");
         returnBack.setPreferredSize(new Dimension(400, 50));
         returnBack.setActionCommand("3");
         returnBack.addActionListener(this);
         card7.add(title);
+        card7.add(pic);
         card7.add(returnBack);
         p_card.add("7", card7);
     }
@@ -211,11 +213,13 @@ public class Zoo  extends JPanel implements ActionListener {
         card8.setBackground(Color.white);
         JLabel title = new JLabel("Cute Little Bilby");
         title.setFont(new Font("Arial", Font.PLAIN, 24));
+        JLabel pic = new JLabel(createImageIcon("bilby.jpg"));
         JButton returnBack = new JButton("Return to Small Mammals");
         returnBack.setPreferredSize(new Dimension(400, 50));
         returnBack.setActionCommand("4");
         returnBack.addActionListener(this);
         card8.add(title);
+        card8.add(pic);
         card8.add(returnBack);
         p_card.add("8", card8);
     }
@@ -226,12 +230,13 @@ public class Zoo  extends JPanel implements ActionListener {
         card9.setBackground(Color.white);
         JLabel title = new JLabel("Cat-size Quoll");
         title.setFont(new Font("Arial", Font.PLAIN, 24));
-
+        JLabel pic = new JLabel(createImageIcon("quoll.jpg"));
         JButton returnBack = new JButton("Return to Small Mammals");
         returnBack.setPreferredSize(new Dimension(400, 50));
         returnBack.setActionCommand("4");
         returnBack.addActionListener(this);
         card9.add(title);
+        card9.add(pic);
         card9.add(returnBack);
         p_card.add("9", card9);
     }
@@ -242,11 +247,13 @@ public class Zoo  extends JPanel implements ActionListener {
         card10.setBackground(Color.white);
         JLabel title = new JLabel("Adorable Pangolin");
         title.setFont(new Font("Arial", Font.PLAIN, 24));
+        JLabel pic = new JLabel(createImageIcon("pangolin.jpg"));
         JButton returnBack = new JButton("Return to Small Mammals");
         returnBack.setPreferredSize(new Dimension(400, 50));
         returnBack.setActionCommand("4");
         returnBack.addActionListener(this);
         card10.add(title);
+        card10.add(pic);
         card10.add(returnBack);
         p_card.add("10", card10);
     }
@@ -256,11 +263,13 @@ public class Zoo  extends JPanel implements ActionListener {
         card11.setBackground(Color.white);
         JLabel title = new JLabel("Horse + Zebra = Zorse");
         title.setFont(new Font("Arial", Font.PLAIN, 24));
+        JLabel pic = new JLabel(createImageIcon("zorse.jpg"));
         JButton returnBack = new JButton("Return to Outdoor Pens");
         returnBack.setPreferredSize(new Dimension(400, 50));
         returnBack.setActionCommand("5");
         returnBack.addActionListener(this);
         card11.add(title);
+        card11.add(pic);
         card11.add(returnBack);
         p_card.add("11", card11);
     }
@@ -270,11 +279,13 @@ public class Zoo  extends JPanel implements ActionListener {
         card12.setBackground(Color.white);
         JLabel title = new JLabel("Beautiful HoneyBadger");
         title.setFont(new Font("Arial", Font.PLAIN, 24));
+        JLabel pic = new JLabel(createImageIcon("honeybadger.jpg"));
         JButton returnBack = new JButton("Return to Outdoor Pens");
         returnBack.setPreferredSize(new Dimension(400, 50));
         returnBack.setActionCommand("5");
         returnBack.addActionListener(this);
         card12.add(title);
+        card12.add(pic);
         card12.add(returnBack);
         p_card.add("12", card12);
     }
