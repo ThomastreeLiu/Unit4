@@ -38,7 +38,7 @@ public class ChickenChicken extends JPanel implements ActionListener{
     public void actionPerformed(ActionEvent e) {
         if (e.getActionCommand().equals("check"))
             JOptionPane.showMessageDialog(null,"Eggs:"+egg+
-                    "\nHen:"+hen+"\nDogs:"+dog);
+                    "\nHen:"+hen);
         if (e.getActionCommand ().equals ("next")){
             int rand = (int)(Math.random() * 10);
             if (rand == 0) {
@@ -55,8 +55,10 @@ public class ChickenChicken extends JPanel implements ActionListener{
             else if (rand == 2) {
                 card.setIcon(createImageIcon("Chicken3.png"));
                 intro.setText("A fox frightens away one hen, if there is a hen. ");
-                if (hen>0&&dog==0)
+                if (hen>0&&dog==0) {
                     hen--;
+                }
+                dog--;
             }
             else if (rand == 3) {
                 card.setIcon(createImageIcon("Chicken4.png"));
