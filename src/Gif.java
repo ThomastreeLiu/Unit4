@@ -7,8 +7,7 @@ public class Gif extends JPanel implements ActionListener {
 
 
     public Gif() {
-        setBackground(Color.cyan);
-        JLabel pic1 = new JLabel(createImageIcon("test.gif"));
+        JLabel pic1 = new JLabel(createImageIcon("游泳池.gif"));
 //constructor with initializing code in here
         add(pic1);
     }
@@ -34,7 +33,7 @@ public class Gif extends JPanel implements ActionListener {
     public static void main(String[] args) {
         JFrame.setDefaultLookAndFeelDecorated(true);
         JFrame frame = new JFrame("GUIBasicN");
-        frame.setSize(470, 350);         //resizes JFrame pane size
+        frame.setSize(635, 381);         //resizes JFrame pane size
         frame.setBackground(Color.WHITE);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         Gif panel = new Gif();
